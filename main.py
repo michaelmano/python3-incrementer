@@ -11,13 +11,6 @@ def resetCode():
     global COUNT
     COUNT = 0
 
-def main():
-    with open(filename) as codes:
-        for code in codes:
-            code = code.strip('\n')
-            code = code.strip('\t')
-            print(code)
-
 def printCode():
     with open(filename) as fp:
         for i, code in enumerate(fp):
